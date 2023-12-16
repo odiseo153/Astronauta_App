@@ -29,7 +29,7 @@ CREATE TABLE Mision (
 );
 
 -- Crear la tabla RedSocial
-CREATE TABLE RedSocial (
+CREATE TABLE RedesSociales (
     ID INT PRIMARY KEY,
     AstronautaID INT FOREIGN KEY REFERENCES Astronauta(ID),
     Tipo NVARCHAR(MAX),
