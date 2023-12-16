@@ -1,0 +1,322 @@
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .addM {
+    position: relative;
+    top: -17em;
+    left: 19em;
+    border-radius: 8px;
+  }
+
+  .addR {
+    position: relative;
+    top: -11em;
+    left: 19em;
+    border-radius: 8px;
+  }
+  
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    top: 6em;
+
+}
+
+strong{
+    font-size: large;
+    display: inline;
+    color: #00bfff;
+}
+
+
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #00bfff;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #00bfff;
+}
+
+.messages {
+    font-size: 16.5px;
+}
+
+
+
+
+/* this card is inspired form this - https://georgefrancis.dev/ */
+
+.cardD {
+    --border-radius: 0.75rem;
+    --primary-color: #7257fa;
+    --secondary-color: #3c3852;
+    width: 100%;
+    font-family: "Arial";
+    padding: 1rem;
+    cursor: pointer;
+    
+    transition: 0.2s ease-in-out;
+    border-radius: var(--border-radius);
+    background: rgb(6, 4, 4);
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    position: relative;
+  }
+  
+  .cardD:hover > .textBox {
+    opacity: 1;
+  }
+  
+  .cardD:hover > img {
+    height: 65%;
+    filter: blur(7px);
+    animation: anim 3s infinite;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .cardD:hover {
+    transform: scale(1.04) rotate(-1deg);
+  }
+  
+
+  .cardD > * + * {
+    margin-top: 1.1em;
+  }
+  
+  .cardD .card__content {
+    color: var(--secondary-color);
+    font-size: 0.86rem;
+  }
+  
+  .cardD .card__title {
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .cardD .card__date {
+    color: #6e6b80;
+    font-size: 0.8rem;
+  }
+  
+  .cardD .card__arrow {
+    position: absolute;
+    background: var(--primary-color);
+    padding: 0.4rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardD svg {
+    transition: 0.2s;
+  }
+  
+  /* hover */
+  .cardD:hover .card__title {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .cardD:hover .card__arrow {
+    background: #111;
+  }
+  
+  .cardD:hover .card__arrow svg {
+    transform: translateX(3px);
+  }
+
+
+
+
+
+
+
+
+
+  .cardCollection {
+    width: 100%;
+    height: 80px;
+    background: #353535;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  
+    transition: 0.5s ease-in-out;
+  }
+  
+  .cardCollection:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  .cardCollectionimg {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#d7cfcf, #9198e5);
+  }
+  
+  .cardCollection:hover > .cardCollectionimg {
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(#9198e5, #712020);
+  }
+  
+  .cardCollectiontextBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    color: white;
+    font-family: "Poppins" sans-serif;
+  }
+  
+  .cardCollectiontextContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .span {
+    font-size: 10px;
+  }
+  
+  .cardCollectionh1 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .cardCollectionp {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .cardCollectioncheckbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cardCollectioncustom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .cardCollectioncheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardCollectioncheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .cardCollectioncustom-checkbox:checked ~ .cardCollectioncheckmark {
+    background-color: #2196f3;
+    box-shadow: 0 3px 7px rgba(33, 150, 243, 0.3);
+  }
+  
+  .cardCollectioncustom-checkbox:checked ~ .cardCollectioncheckmark:after {
+    display: block;
+  }
+  
+  @keyframes checkAnim {
+    0% {
+      height: 0;
+    }
+  
+    100% {
+      height: 10px;
+    }
+  }
+  
+  .cardCollectioncustom-checkbox:checked ~ .cardCollectioncheckmark:after {
+    animation: checkAnim 0.2s forwards;
+  }
+  
+
