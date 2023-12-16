@@ -18,14 +18,14 @@ Esta es una aplicación desarrollada en React para el frontend y .NET para el ba
 
 - **Agregar misiones y redes sociales en los detalles**
 
-#Agregar Mision
+##Agregar Mision
 
  ![Texto Alternativo](mision.png)
 
 
 
 
-#Agregar Red Social
+##Agregar Red Social
 
   ![Texto Alternativo](red.png)
   
