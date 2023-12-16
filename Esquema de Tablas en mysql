@@ -1,0 +1,37 @@
+-- Crear la base de datos "astronauta"
+CREATE DATABASE astronauta;
+GO
+
+-- Utilizar la base de datos "astronauta"
+USE astronauta;
+GO
+
+-- Crear la tabla Astronauta
+CREATE TABLE Astronauta (
+    ID INT PRIMARY KEY,
+    Fotos NVARCHAR(MAX),
+    Nombre NVARCHAR(MAX),
+    Nacionalidad NVARCHAR(MAX),
+    Activo INT,
+    Descripcion NVARCHAR(MAX),
+    FechaNacimiento DATETIME,
+    Edad INT
+);
+
+-- Crear la tabla Mision
+CREATE TABLE Mision (
+    ID INT PRIMARY KEY,
+    AstronautaID INT FOREIGN KEY REFERENCES Astronauta(ID),
+    NombreMision NVARCHAR(MAX),
+    FechaMision DATETIME,
+    DescripcionMision NVARCHAR(MAX),
+    ResultadosMision NVARCHAR(MAX)
+);
+
+-- Crear la tabla RedSocial
+CREATE TABLE RedSocial (
+    ID INT PRIMARY KEY,
+    AstronautaID INT FOREIGN KEY REFERENCES Astronauta(ID),
+    Tipo NVARCHAR(MAX),
+    Enlace NVARCHAR(MAX)
+);
