@@ -45,6 +45,3 @@ Si encuentras algún problema o tienes sugerencias para mejorar la aplicación, 
 
 ¡Gracias por contribuir!
 
----
-
-Adapta este README según las necesidades específicas de tu proyecto. Recuerda reemplazar las secciones como "Backend (.NET)" y "Frontend (React)" con información específica sobre cómo ejecutar tu aplicación.
