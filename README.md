@@ -6,8 +6,17 @@ Esta es una aplicación desarrollada en React para el frontend y .NET para el ba
 ## Características
 
 - **Listado de Astronautas:** Visualiza un listado completo de astronautas con sus datos principales.
+- ![Texto Alternativo](listado.png)
+
+- **Agregar misiones y redes sociales en los detalles **
+
+#Agregar Mision
+ ![Texto Alternativo](mision.png)
+3Agregar Red Social
+  ![Texto Alternativo](red.png)
 
 - **Detalles de Misiones:** Accede a detalles específicos sobre las misiones espaciales en las que participó cada astronauta.
+ ![Texto Alternativo](detalles.png)
 
 - **Filtrado por Nacionalidad:** Utiliza un filtro para mostrar astronautas específicos por su nacionalidad.
 
